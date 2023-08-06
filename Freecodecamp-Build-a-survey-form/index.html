@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">SURVEY</h1>
+        <p id="description">How to prevent world hunger?</p>
+        <form id="survey-form">
+                <label for="name" id="name-label">Name</label><br>
+                <input type="text" id="name" required placeholder="Enter your name">
+                <label for="email" id="email-label">Email</label><br>
+                <input type="email" id="email" required placeholder="Enter your Email">
+                <label for="number" id="number-label">Age (optional)</label><br>
+                <input type="number" id="number" min="0" max="100" placeholder="Age">
+            <div class="main-input">
+                <p>What are you</p>
+                <select id="dropdown">
+                    <option value="student">Human</option>
+                    <option value="full-time-job">Alien</option>
+                </select>
+            </div>
+                <p>Pick 1 solution</p>
+                <input type="radio" id="donation" name="recommend" value="donation">
+                <label for="definitely">donation</label>
+                <br>
+                <input type="radio" id="remove" name="recommend" value="remove">
+                <label for="maybe">remove?</label>
+                <br>
+                <input type="radio" id="No" name="recommend" value="No">
+                <label for="not-sure">No</label>
+                <br>
+                <p>your fav food(pick as much as you like</p>
+                <input type="checkbox" id="me" value="me">
+                <label for="me">me ;)</label>
+                <br>
+                <input type="checkbox" id="no" value="no">
+                <label for="no">no</label>
+
+            <div>
+                <p>Any suggestions?</p>
+                <textarea cols="50" rows="5" placeholder="Comment Here.."></textarea>
+            </div>
+<br>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </body>
+</html>
